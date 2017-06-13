@@ -1,0 +1,501 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		25FD4E95C799963223599A11 /* Pods_PanoramaStitching.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFFE02266787F4FFA2A5222F /* Pods_PanoramaStitching.framework */; };
+		F850BD331EE8EAB5006FA00A /* UIImage+OpenCV.mm in Sources */ = {isa = PBXBuildFile; fileRef = F850BD301EE8EAB5006FA00A /* UIImage+OpenCV.mm */; };
+		F850BD341EE8EAB5006FA00A /* UIImage+Rotate.m in Sources */ = {isa = PBXBuildFile; fileRef = F850BD321EE8EAB5006FA00A /* UIImage+Rotate.m */; };
+		F899986A1EE7AE7A00D1C801 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F89998691EE7AE7A00D1C801 /* opencv2.framework */; };
+		F899986C1EE7AE8C00D1C801 /* libjpeg.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F899986B1EE7AE8C00D1C801 /* libjpeg.a */; };
+		F8B0CFD31EEE81ED00EB2768 /* stitching.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F8B0CFD11EEE81ED00EB2768 /* stitching.cpp */; };
+		F8B0CFD61EEE830F00EB2768 /* OpenCVWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = F8B0CFD51EEE830F00EB2768 /* OpenCVWrapper.mm */; };
+		F8B975B81ECD32BD00FEB399 /* AddImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B975B71ECD32BD00FEB399 /* AddImageView.swift */; };
+		F8BAA68E1ED540C000113F31 /* CustomCell_Instagram.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BAA68C1ED540C000113F31 /* CustomCell_Instagram.swift */; };
+		F8BAA68F1ED540C000113F31 /* CustomCell_Instagram.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8BAA68D1ED540C000113F31 /* CustomCell_Instagram.xib */; };
+		F8D624D71ECBE5C3008C04A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D624D61ECBE5C3008C04A0 /* AppDelegate.swift */; };
+		F8D624DC1ECBE5C3008C04A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8D624DA1ECBE5C3008C04A0 /* Main.storyboard */; };
+		F8D624DE1ECBE5C3008C04A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8D624DD1ECBE5C3008C04A0 /* Assets.xcassets */; };
+		F8D624E11ECBE5C3008C04A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8D624DF1ECBE5C3008C04A0 /* LaunchScreen.storyboard */; };
+		F8D624EC1ECBE80B008C04A0 /* OriginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D624EB1ECBE80B008C04A0 /* OriginViewController.swift */; };
+		F8D624EE1ECBEEF2008C04A0 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D624ED1ECBEEF2008C04A0 /* ImageCollectionViewCell.swift */; };
+		F8D624F01ECBEF12008C04A0 /* GenerateButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D624EF1ECBEF12008C04A0 /* GenerateButton.swift */; };
+		F8E7C2341ED57F9300B56D96 /* ZoomedImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E7C2331ED57F9300B56D96 /* ZoomedImageViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		533CD325DD959A4C6D10F8AF /* Pods-PanoramaStitching.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PanoramaStitching.release.xcconfig"; path = "Pods/Target Support Files/Pods-PanoramaStitching/Pods-PanoramaStitching.release.xcconfig"; sourceTree = "<group>"; };
+		56E21A61DAED2E333C2E3ABF /* Pods-PanoramaStitching.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PanoramaStitching.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PanoramaStitching/Pods-PanoramaStitching.debug.xcconfig"; sourceTree = "<group>"; };
+		EFFE02266787F4FFA2A5222F /* Pods_PanoramaStitching.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PanoramaStitching.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F850BD2F1EE8EAB5006FA00A /* UIImage+OpenCV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+OpenCV.h"; sourceTree = "<group>"; };
+		F850BD301EE8EAB5006FA00A /* UIImage+OpenCV.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "UIImage+OpenCV.mm"; sourceTree = "<group>"; };
+		F850BD311EE8EAB5006FA00A /* UIImage+Rotate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Rotate.h"; sourceTree = "<group>"; };
+		F850BD321EE8EAB5006FA00A /* UIImage+Rotate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Rotate.m"; sourceTree = "<group>"; };
+		F89998551EE7A4A100D1C801 /* PanoramaStitching-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PanoramaStitching-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		F89998691EE7AE7A00D1C801 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
+		F899986B1EE7AE8C00D1C801 /* libjpeg.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libjpeg.a; sourceTree = "<group>"; };
+		F8B0CFD11EEE81ED00EB2768 /* stitching.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = stitching.cpp; sourceTree = "<group>"; };
+		F8B0CFD21EEE81ED00EB2768 /* stitching.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stitching.h; sourceTree = "<group>"; };
+		F8B0CFD41EEE830F00EB2768 /* OpenCVWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenCVWrapper.h; sourceTree = "<group>"; };
+		F8B0CFD51EEE830F00EB2768 /* OpenCVWrapper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OpenCVWrapper.mm; sourceTree = "<group>"; };
+		F8B975B71ECD32BD00FEB399 /* AddImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddImageView.swift; sourceTree = "<group>"; };
+		F8BAA68C1ED540C000113F31 /* CustomCell_Instagram.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell_Instagram.swift; sourceTree = "<group>"; };
+		F8BAA68D1ED540C000113F31 /* CustomCell_Instagram.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomCell_Instagram.xib; sourceTree = "<group>"; };
+		F8D624D31ECBE5C3008C04A0 /* PanoramaStitching.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PanoramaStitching.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8D624D61ECBE5C3008C04A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F8D624DB1ECBE5C3008C04A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F8D624DD1ECBE5C3008C04A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F8D624E01ECBE5C3008C04A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F8D624E21ECBE5C3008C04A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8D624EB1ECBE80B008C04A0 /* OriginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OriginViewController.swift; sourceTree = "<group>"; };
+		F8D624ED1ECBEEF2008C04A0 /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		F8D624EF1ECBEF12008C04A0 /* GenerateButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenerateButton.swift; sourceTree = "<group>"; };
+		F8E7C2331ED57F9300B56D96 /* ZoomedImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZoomedImageViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F8D624D01ECBE5C3008C04A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F899986A1EE7AE7A00D1C801 /* opencv2.framework in Frameworks */,
+				F899986C1EE7AE8C00D1C801 /* libjpeg.a in Frameworks */,
+				25FD4E95C799963223599A11 /* Pods_PanoramaStitching.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CF28667AFF6E7376491A19C6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				56E21A61DAED2E333C2E3ABF /* Pods-PanoramaStitching.debug.xcconfig */,
+				533CD325DD959A4C6D10F8AF /* Pods-PanoramaStitching.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E673794E0106EED3B2188107 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F899986B1EE7AE8C00D1C801 /* libjpeg.a */,
+				F89998691EE7AE7A00D1C801 /* opencv2.framework */,
+				EFFE02266787F4FFA2A5222F /* Pods_PanoramaStitching.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F8BAA6901ED5482500113F31 /* PhotoCell */ = {
+			isa = PBXGroup;
+			children = (
+				F8BAA68C1ED540C000113F31 /* CustomCell_Instagram.swift */,
+				F8BAA68D1ED540C000113F31 /* CustomCell_Instagram.xib */,
+			);
+			name = PhotoCell;
+			sourceTree = "<group>";
+		};
+		F8D624CA1ECBE5C3008C04A0 = {
+			isa = PBXGroup;
+			children = (
+				F8D624D51ECBE5C3008C04A0 /* PanoramaStitching */,
+				F8D624D41ECBE5C3008C04A0 /* Products */,
+				CF28667AFF6E7376491A19C6 /* Pods */,
+				E673794E0106EED3B2188107 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F8D624D41ECBE5C3008C04A0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F8D624D31ECBE5C3008C04A0 /* PanoramaStitching.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F8D624D51ECBE5C3008C04A0 /* PanoramaStitching */ = {
+			isa = PBXGroup;
+			children = (
+				F8B0CFD41EEE830F00EB2768 /* OpenCVWrapper.h */,
+				F8B0CFD51EEE830F00EB2768 /* OpenCVWrapper.mm */,
+				F89998551EE7A4A100D1C801 /* PanoramaStitching-Bridging-Header.h */,
+				F850BD2F1EE8EAB5006FA00A /* UIImage+OpenCV.h */,
+				F850BD301EE8EAB5006FA00A /* UIImage+OpenCV.mm */,
+				F850BD311EE8EAB5006FA00A /* UIImage+Rotate.h */,
+				F850BD321EE8EAB5006FA00A /* UIImage+Rotate.m */,
+				F8B0CFD11EEE81ED00EB2768 /* stitching.cpp */,
+				F8B0CFD21EEE81ED00EB2768 /* stitching.h */,
+				F8BAA6901ED5482500113F31 /* PhotoCell */,
+				F8E7C2321ED5769C00B56D96 /* Controller */,
+				F8E7C2311ED5768C00B56D96 /* View */,
+				F8D624E81ECBE5CE008C04A0 /* Supporting Files */,
+			);
+			path = PanoramaStitching;
+			sourceTree = "<group>";
+		};
+		F8D624E81ECBE5CE008C04A0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F8D624DA1ECBE5C3008C04A0 /* Main.storyboard */,
+				F8D624D61ECBE5C3008C04A0 /* AppDelegate.swift */,
+				F8D624DD1ECBE5C3008C04A0 /* Assets.xcassets */,
+				F8D624DF1ECBE5C3008C04A0 /* LaunchScreen.storyboard */,
+				F8D624E21ECBE5C3008C04A0 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F8E7C2311ED5768C00B56D96 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F8D624ED1ECBEEF2008C04A0 /* ImageCollectionViewCell.swift */,
+				F8B975B71ECD32BD00FEB399 /* AddImageView.swift */,
+				F8D624EF1ECBEF12008C04A0 /* GenerateButton.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		F8E7C2321ED5769C00B56D96 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F8D624EB1ECBE80B008C04A0 /* OriginViewController.swift */,
+				F8E7C2331ED57F9300B56D96 /* ZoomedImageViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F8D624D21ECBE5C3008C04A0 /* PanoramaStitching */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8D624E51ECBE5C3008C04A0 /* Build configuration list for PBXNativeTarget "PanoramaStitching" */;
+			buildPhases = (
+				6A7F8DD3F355E376355BF72C /* [CP] Check Pods Manifest.lock */,
+				F8D624CF1ECBE5C3008C04A0 /* Sources */,
+				F8D624D01ECBE5C3008C04A0 /* Frameworks */,
+				F8D624D11ECBE5C3008C04A0 /* Resources */,
+				FCF7CA19D79ACBF11CB2491C /* [CP] Embed Pods Frameworks */,
+				8D9C32CB429CD6E2C6C34A16 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PanoramaStitching;
+			productName = PanoramaStitching;
+			productReference = F8D624D31ECBE5C3008C04A0 /* PanoramaStitching.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F8D624CB1ECBE5C3008C04A0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "李茂琦";
+				TargetAttributes = {
+					F8D624D21ECBE5C3008C04A0 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 9VPLXE5668;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = F8D624CE1ECBE5C3008C04A0 /* Build configuration list for PBXProject "PanoramaStitching" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F8D624CA1ECBE5C3008C04A0;
+			productRefGroup = F8D624D41ECBE5C3008C04A0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F8D624D21ECBE5C3008C04A0 /* PanoramaStitching */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F8D624D11ECBE5C3008C04A0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8D624E11ECBE5C3008C04A0 /* LaunchScreen.storyboard in Resources */,
+				F8BAA68F1ED540C000113F31 /* CustomCell_Instagram.xib in Resources */,
+				F8D624DE1ECBE5C3008C04A0 /* Assets.xcassets in Resources */,
+				F8D624DC1ECBE5C3008C04A0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6A7F8DD3F355E376355BF72C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8D9C32CB429CD6E2C6C34A16 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PanoramaStitching/Pods-PanoramaStitching-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FCF7CA19D79ACBF11CB2491C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PanoramaStitching/Pods-PanoramaStitching-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F8D624CF1ECBE5C3008C04A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8D624EE1ECBEEF2008C04A0 /* ImageCollectionViewCell.swift in Sources */,
+				F8B0CFD61EEE830F00EB2768 /* OpenCVWrapper.mm in Sources */,
+				F850BD341EE8EAB5006FA00A /* UIImage+Rotate.m in Sources */,
+				F8B975B81ECD32BD00FEB399 /* AddImageView.swift in Sources */,
+				F8D624EC1ECBE80B008C04A0 /* OriginViewController.swift in Sources */,
+				F8E7C2341ED57F9300B56D96 /* ZoomedImageViewController.swift in Sources */,
+				F8BAA68E1ED540C000113F31 /* CustomCell_Instagram.swift in Sources */,
+				F8D624F01ECBEF12008C04A0 /* GenerateButton.swift in Sources */,
+				F8B0CFD31EEE81ED00EB2768 /* stitching.cpp in Sources */,
+				F8D624D71ECBE5C3008C04A0 /* AppDelegate.swift in Sources */,
+				F850BD331EE8EAB5006FA00A /* UIImage+OpenCV.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F8D624DA1ECBE5C3008C04A0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F8D624DB1ECBE5C3008C04A0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F8D624DF1ECBE5C3008C04A0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F8D624E01ECBE5C3008C04A0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F8D624E31ECBE5C3008C04A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F8D624E41ECBE5C3008C04A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F8D624E61ECBE5C3008C04A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 56E21A61DAED2E333C2E3ABF /* Pods-PanoramaStitching.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 9VPLXE5668;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = PanoramaStitching/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.limaoqi.PanoramaStitching;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PanoramaStitching-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		F8D624E71ECBE5C3008C04A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 533CD325DD959A4C6D10F8AF /* Pods-PanoramaStitching.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 9VPLXE5668;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = PanoramaStitching/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.limaoqi.PanoramaStitching;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PanoramaStitching-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F8D624CE1ECBE5C3008C04A0 /* Build configuration list for PBXProject "PanoramaStitching" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8D624E31ECBE5C3008C04A0 /* Debug */,
+				F8D624E41ECBE5C3008C04A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F8D624E51ECBE5C3008C04A0 /* Build configuration list for PBXNativeTarget "PanoramaStitching" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8D624E61ECBE5C3008C04A0 /* Debug */,
+				F8D624E71ECBE5C3008C04A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F8D624CB1ECBE5C3008C04A0 /* Project object */;
+}

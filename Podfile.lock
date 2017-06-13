@@ -1,0 +1,15 @@
+PODS:
+  - SnapKit (3.2.0)
+  - TLPhotoPicker (1.1.1)
+
+DEPENDENCIES:
+  - SnapKit (~> 3.2.0)
+  - TLPhotoPicker
+
+SPEC CHECKSUMS:
+  SnapKit: 1ca44df72cfa543218d177cb8aab029d10d86ea7
+  TLPhotoPicker: cbbc56721b76b1f60c325fb3bdef3100b99412b7
+
+PODFILE CHECKSUM: 4718aed7cdec9a5ce880a9ba1b84655f06e2d7b0
+
+COCOAPODS: 1.1.1
