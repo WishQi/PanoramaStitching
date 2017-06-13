@@ -17,6 +17,12 @@
 		F8B975B81ECD32BD00FEB399 /* AddImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B975B71ECD32BD00FEB399 /* AddImageView.swift */; };
 		F8BAA68E1ED540C000113F31 /* CustomCell_Instagram.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BAA68C1ED540C000113F31 /* CustomCell_Instagram.swift */; };
 		F8BAA68F1ED540C000113F31 /* CustomCell_Instagram.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8BAA68D1ED540C000113F31 /* CustomCell_Instagram.xib */; };
+		F8D037111EF00C5800E88C52 /* GPUImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8D037101EF00C5800E88C52 /* GPUImage.framework */; };
+		F8D037131EF00C7300E88C52 /* TuSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8D037121EF00C7300E88C52 /* TuSDK.framework */; };
+		F8D037151EF00C8200E88C52 /* TuSDKGeeV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8D037141EF00C8200E88C52 /* TuSDKGeeV1.framework */; };
+		F8D037171EF00D3C00E88C52 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8D037161EF00D3C00E88C52 /* Photos.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		F8D0371B1EF00E6500E88C52 /* TuSDK.strings in Resources */ = {isa = PBXBuildFile; fileRef = F8D0371D1EF00E6500E88C52 /* TuSDK.strings */; };
+		F8D037201EF0106F00E88C52 /* TuSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F8D0371F1EF0106F00E88C52 /* TuSDK.bundle */; };
 		F8D624D71ECBE5C3008C04A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D624D61ECBE5C3008C04A0 /* AppDelegate.swift */; };
 		F8D624DC1ECBE5C3008C04A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8D624DA1ECBE5C3008C04A0 /* Main.storyboard */; };
 		F8D624DE1ECBE5C3008C04A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8D624DD1ECBE5C3008C04A0 /* Assets.xcassets */; };
@@ -45,6 +51,12 @@
 		F8B975B71ECD32BD00FEB399 /* AddImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddImageView.swift; sourceTree = "<group>"; };
 		F8BAA68C1ED540C000113F31 /* CustomCell_Instagram.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell_Instagram.swift; sourceTree = "<group>"; };
 		F8BAA68D1ED540C000113F31 /* CustomCell_Instagram.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomCell_Instagram.xib; sourceTree = "<group>"; };
+		F8D037101EF00C5800E88C52 /* GPUImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GPUImage.framework; sourceTree = "<group>"; };
+		F8D037121EF00C7300E88C52 /* TuSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TuSDK.framework; sourceTree = "<group>"; };
+		F8D037141EF00C8200E88C52 /* TuSDKGeeV1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TuSDKGeeV1.framework; sourceTree = "<group>"; };
+		F8D037161EF00D3C00E88C52 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
+		F8D0371C1EF00E6500E88C52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/TuSDK.strings; sourceTree = "<group>"; };
+		F8D0371F1EF0106F00E88C52 /* TuSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TuSDK.bundle; sourceTree = "<group>"; };
 		F8D624D31ECBE5C3008C04A0 /* PanoramaStitching.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PanoramaStitching.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8D624D61ECBE5C3008C04A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F8D624DB1ECBE5C3008C04A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -62,8 +74,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8D037171EF00D3C00E88C52 /* Photos.framework in Frameworks */,
 				F899986A1EE7AE7A00D1C801 /* opencv2.framework in Frameworks */,
+				F8D037151EF00C8200E88C52 /* TuSDKGeeV1.framework in Frameworks */,
+				F8D037111EF00C5800E88C52 /* GPUImage.framework in Frameworks */,
 				F899986C1EE7AE8C00D1C801 /* libjpeg.a in Frameworks */,
+				F8D037131EF00C7300E88C52 /* TuSDK.framework in Frameworks */,
 				25FD4E95C799963223599A11 /* Pods_PanoramaStitching.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -83,7 +99,11 @@
 		E673794E0106EED3B2188107 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F8D037161EF00D3C00E88C52 /* Photos.framework */,
 				F899986B1EE7AE8C00D1C801 /* libjpeg.a */,
+				F8D037141EF00C8200E88C52 /* TuSDKGeeV1.framework */,
+				F8D037121EF00C7300E88C52 /* TuSDK.framework */,
+				F8D037101EF00C5800E88C52 /* GPUImage.framework */,
 				F89998691EE7AE7A00D1C801 /* opencv2.framework */,
 				EFFE02266787F4FFA2A5222F /* Pods_PanoramaStitching.framework */,
 			);
@@ -97,6 +117,32 @@
 				F8BAA68D1ED540C000113F31 /* CustomCell_Instagram.xib */,
 			);
 			name = PhotoCell;
+			sourceTree = "<group>";
+		};
+		F8D037181EF00D9000E88C52 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				F8D0371F1EF0106F00E88C52 /* TuSDK.bundle */,
+				F8D0371D1EF00E6500E88C52 /* TuSDK.strings */,
+			);
+			name = Resource;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		F8D0371E1EF00FE200E88C52 /* HandleImages */ = {
+			isa = PBXGroup;
+			children = (
+				F8B0CFD41EEE830F00EB2768 /* OpenCVWrapper.h */,
+				F8B0CFD51EEE830F00EB2768 /* OpenCVWrapper.mm */,
+				F89998551EE7A4A100D1C801 /* PanoramaStitching-Bridging-Header.h */,
+				F850BD2F1EE8EAB5006FA00A /* UIImage+OpenCV.h */,
+				F850BD301EE8EAB5006FA00A /* UIImage+OpenCV.mm */,
+				F850BD311EE8EAB5006FA00A /* UIImage+Rotate.h */,
+				F850BD321EE8EAB5006FA00A /* UIImage+Rotate.m */,
+				F8B0CFD11EEE81ED00EB2768 /* stitching.cpp */,
+				F8B0CFD21EEE81ED00EB2768 /* stitching.h */,
+			);
+			name = HandleImages;
 			sourceTree = "<group>";
 		};
 		F8D624CA1ECBE5C3008C04A0 = {
@@ -120,18 +166,11 @@
 		F8D624D51ECBE5C3008C04A0 /* PanoramaStitching */ = {
 			isa = PBXGroup;
 			children = (
-				F8B0CFD41EEE830F00EB2768 /* OpenCVWrapper.h */,
-				F8B0CFD51EEE830F00EB2768 /* OpenCVWrapper.mm */,
-				F89998551EE7A4A100D1C801 /* PanoramaStitching-Bridging-Header.h */,
-				F850BD2F1EE8EAB5006FA00A /* UIImage+OpenCV.h */,
-				F850BD301EE8EAB5006FA00A /* UIImage+OpenCV.mm */,
-				F850BD311EE8EAB5006FA00A /* UIImage+Rotate.h */,
-				F850BD321EE8EAB5006FA00A /* UIImage+Rotate.m */,
-				F8B0CFD11EEE81ED00EB2768 /* stitching.cpp */,
-				F8B0CFD21EEE81ED00EB2768 /* stitching.h */,
+				F8D0371E1EF00FE200E88C52 /* HandleImages */,
 				F8BAA6901ED5482500113F31 /* PhotoCell */,
 				F8E7C2321ED5769C00B56D96 /* Controller */,
 				F8E7C2311ED5768C00B56D96 /* View */,
+				F8D037181EF00D9000E88C52 /* Resource */,
 				F8D624E81ECBE5CE008C04A0 /* Supporting Files */,
 			);
 			path = PanoramaStitching;
@@ -234,6 +273,8 @@
 			files = (
 				F8D624E11ECBE5C3008C04A0 /* LaunchScreen.storyboard in Resources */,
 				F8BAA68F1ED540C000113F31 /* CustomCell_Instagram.xib in Resources */,
+				F8D0371B1EF00E6500E88C52 /* TuSDK.strings in Resources */,
+				F8D037201EF0106F00E88C52 /* TuSDK.bundle in Resources */,
 				F8D624DE1ECBE5C3008C04A0 /* Assets.xcassets in Resources */,
 				F8D624DC1ECBE5C3008C04A0 /* Main.storyboard in Resources */,
 			);
@@ -311,6 +352,14 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		F8D0371D1EF00E6500E88C52 /* TuSDK.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F8D0371C1EF00E6500E88C52 /* Base */,
+			);
+			name = TuSDK.strings;
+			sourceTree = "<group>";
+		};
 		F8D624DA1ECBE5C3008C04A0 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -441,6 +490,14 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"SnapKit\"",
+					"-framework",
+					"\"TLPhotoPicker\"",
+					"-Objc",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.limaoqi.PanoramaStitching;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "PanoramaStitching-Bridging-Header.h";
@@ -466,6 +523,14 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"SnapKit\"",
+					"-framework",
+					"\"TLPhotoPicker\"",
+					"-Objc",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.limaoqi.PanoramaStitching;
 				PRODUCT_NAME = "$(TARGET_NAME)";

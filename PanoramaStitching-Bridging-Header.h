@@ -3,3 +3,5 @@
 //
 
 #import "OpenCVWrapper.h"
+#import <TuSDK/TuSDK.h>
+#import <TuSDKGeeV1/TuSDKGeeV1.h>

@@ -98,4 +98,4 @@ fastlane/test_output
 *.out
 *.app
 
-opencv2.framework/
+*.framework/
