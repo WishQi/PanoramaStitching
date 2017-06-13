@@ -7,4 +7,5 @@ target 'PanoramaStitching' do
   # Pods for PanoramaStitching
 	pod 'SnapKit', '~> 3.2.0'
 	pod 'TLPhotoPicker'
+	pod 'TuSDK', '~> 2.8.0'
 end

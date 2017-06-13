@@ -99,5 +99,4 @@ fastlane/test_output
 *.app
 
 *.framework/
-TuSDK.framework/
-TuSDKGeeV1.framework/
+

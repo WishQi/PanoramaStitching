@@ -17,9 +17,6 @@
 		F8B975B81ECD32BD00FEB399 /* AddImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B975B71ECD32BD00FEB399 /* AddImageView.swift */; };
 		F8BAA68E1ED540C000113F31 /* CustomCell_Instagram.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BAA68C1ED540C000113F31 /* CustomCell_Instagram.swift */; };
 		F8BAA68F1ED540C000113F31 /* CustomCell_Instagram.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8BAA68D1ED540C000113F31 /* CustomCell_Instagram.xib */; };
-		F8D037111EF00C5800E88C52 /* GPUImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8D037101EF00C5800E88C52 /* GPUImage.framework */; };
-		F8D037131EF00C7300E88C52 /* TuSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8D037121EF00C7300E88C52 /* TuSDK.framework */; };
-		F8D037151EF00C8200E88C52 /* TuSDKGeeV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8D037141EF00C8200E88C52 /* TuSDKGeeV1.framework */; };
 		F8D037171EF00D3C00E88C52 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8D037161EF00D3C00E88C52 /* Photos.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		F8D0371B1EF00E6500E88C52 /* TuSDK.strings in Resources */ = {isa = PBXBuildFile; fileRef = F8D0371D1EF00E6500E88C52 /* TuSDK.strings */; };
 		F8D037201EF0106F00E88C52 /* TuSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F8D0371F1EF0106F00E88C52 /* TuSDK.bundle */; };
@@ -51,9 +48,6 @@
 		F8B975B71ECD32BD00FEB399 /* AddImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddImageView.swift; sourceTree = "<group>"; };
 		F8BAA68C1ED540C000113F31 /* CustomCell_Instagram.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell_Instagram.swift; sourceTree = "<group>"; };
 		F8BAA68D1ED540C000113F31 /* CustomCell_Instagram.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomCell_Instagram.xib; sourceTree = "<group>"; };
-		F8D037101EF00C5800E88C52 /* GPUImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GPUImage.framework; sourceTree = "<group>"; };
-		F8D037121EF00C7300E88C52 /* TuSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TuSDK.framework; sourceTree = "<group>"; };
-		F8D037141EF00C8200E88C52 /* TuSDKGeeV1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TuSDKGeeV1.framework; sourceTree = "<group>"; };
 		F8D037161EF00D3C00E88C52 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
 		F8D0371C1EF00E6500E88C52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/TuSDK.strings; sourceTree = "<group>"; };
 		F8D0371F1EF0106F00E88C52 /* TuSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TuSDK.bundle; sourceTree = "<group>"; };
@@ -76,10 +70,7 @@
 			files = (
 				F8D037171EF00D3C00E88C52 /* Photos.framework in Frameworks */,
 				F899986A1EE7AE7A00D1C801 /* opencv2.framework in Frameworks */,
-				F8D037151EF00C8200E88C52 /* TuSDKGeeV1.framework in Frameworks */,
-				F8D037111EF00C5800E88C52 /* GPUImage.framework in Frameworks */,
 				F899986C1EE7AE8C00D1C801 /* libjpeg.a in Frameworks */,
-				F8D037131EF00C7300E88C52 /* TuSDK.framework in Frameworks */,
 				25FD4E95C799963223599A11 /* Pods_PanoramaStitching.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -101,9 +92,6 @@
 			children = (
 				F8D037161EF00D3C00E88C52 /* Photos.framework */,
 				F899986B1EE7AE8C00D1C801 /* libjpeg.a */,
-				F8D037141EF00C8200E88C52 /* TuSDKGeeV1.framework */,
-				F8D037121EF00C7300E88C52 /* TuSDK.framework */,
-				F8D037101EF00C5800E88C52 /* GPUImage.framework */,
 				F89998691EE7AE7A00D1C801 /* opencv2.framework */,
 				EFFE02266787F4FFA2A5222F /* Pods_PanoramaStitching.framework */,
 			);
