@@ -16,8 +16,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        TuSDK.initSdk(withAppKey: "c1004290dba773ab-01-khz2r1")
-        TuSDK.setLogLevel(lsqLogLevel.DEBUG)
         return true
     }
 

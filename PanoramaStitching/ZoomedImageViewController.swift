@@ -8,6 +8,7 @@
 
 import UIKit
 import SnapKit
+import Sharaku
 
 class ZoomedImageViewController: UIViewController {
     
@@ -17,10 +18,6 @@ class ZoomedImageViewController: UIViewController {
             scrollView.contentSize = imageView.frame.size
             scrollView.addSubview(imageView)
         }
-    }
-    
-    @IBAction func share(_ sender: UIBarButtonItem) {
-        
     }
     
     fileprivate var imageView = UIImageView()
@@ -41,6 +38,12 @@ class ZoomedImageViewController: UIViewController {
         gesture.minimumPressDuration = 1.0
         imageView.isUserInteractionEnabled = true
         imageView.addGestureRecognizer(gesture)
+    }
+    
+    @IBAction func editImage(_ sender: UIBarButtonItem) {
+        let filterVC = SHViewController(image: image!)
+        filterVC.delegate = self
+        present(filterVC, animated: true, completion: nil)
     }
     
     private func setAlert() {
@@ -104,6 +107,15 @@ class ZoomedImageViewController: UIViewController {
         updateMinZoomScaleForSize(size: view.bounds.size)
     }
     
+}
+
+extension ZoomedImageViewController: SHViewControllerDelegate {
+    func shViewControllerImageDidFilter(image: UIImage) {
+        imageView.image = image
+    }
+    
+    func shViewControllerDidCancel() {
+    }
 }
 
 extension ZoomedImageViewController: UIScrollViewDelegate {

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="1ps-yk-5qY">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="hpE-ji-EQx">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -14,7 +14,7 @@
         <scene sceneID="krk-ww-e9B">
             <objects>
                 <collectionViewController id="PoA-NR-iKP" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="OdA-g1-ZWR">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" id="OdA-g1-ZWR">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -44,25 +44,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="65C-Av-amS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1817" y="790"/>
-        </scene>
-        <!--Tab Bar Controller-->
-        <scene sceneID="Qkz-y4-aWx">
-            <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="1ps-yk-5qY" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="N6k-SB-gri">
-                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                    </tabBar>
-                    <connections>
-                        <segue destination="EEY-aR-cNX" kind="relationship" relationship="viewControllers" id="GDv-RV-gL5"/>
-                        <segue destination="hpE-ji-EQx" kind="relationship" relationship="viewControllers" id="q3X-lE-mdS"/>
-                    </connections>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="8wR-eM-BTU" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="122" y="538"/>
         </scene>
         <!--Origin Images-->
         <scene sceneID="PQS-kX-M6L">
@@ -181,7 +162,7 @@
             </objects>
             <point key="canvasLocation" x="1012" y="790.25487256371821"/>
         </scene>
-        <!--Seleted Photo-->
+        <!--Selected Photo-->
         <scene sceneID="ggR-F8-Y90">
             <objects>
                 <viewController storyboardIdentifier="PhotoViewController" id="HtY-DD-WZq" customClass="ZoomedImageViewController" customModule="PanoramaStitching" customModuleProvider="target" sceneMemberID="viewController">
@@ -207,10 +188,10 @@
                     </view>
                     <extendedEdge key="edgesForExtendedLayout"/>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" title="Seleted Photo" id="qvp-4a-DmW">
-                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="hKX-fd-IaM">
+                    <navigationItem key="navigationItem" title="Selected Photo" id="Mi9-7Q-aCQ">
+                        <barButtonItem key="rightBarButtonItem" systemItem="edit" id="4Vq-Ct-XUa">
                             <connections>
-                                <action selector="share:" destination="HtY-DD-WZq" id="MS7-Lk-OSc"/>
+                                <action selector="editImage:" destination="HtY-DD-WZq" id="i37-rZ-AfY"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>

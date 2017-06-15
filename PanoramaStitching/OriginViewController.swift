@@ -68,7 +68,14 @@ class OriginViewController: UIViewController {
         }
         spinner.startAnimating()
         DispatchQueue.global(qos: .userInitiated).async { [weak self] in
-            self?.stitchedImage = OpenCVWrapper.process(with: originalImages) as UIImage
+            if let resultImage = OpenCVWrapper.process(with: originalImages) {
+                self?.stitchedImage = resultImage
+            } else {
+                let alertVC = UIAlertController(title: "Error!", message: "Cannot stitch the selected images!", preferredStyle: .alert)
+                let cancleAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+                alertVC.addAction(cancleAction)
+                self?.present(alertVC, animated: true, completion: nil)
+            }
             DispatchQueue.main.async {
                 self?.spinner.stopAnimating()
                 self?.performSegue(withIdentifier: "show", sender: self?.generateButton)

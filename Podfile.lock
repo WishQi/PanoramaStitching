@@ -1,29 +1,18 @@
 PODS:
-  - GPUImage (0.1.7)
+  - Sharaku (1.0.2)
   - SnapKit (3.2.0)
   - TLPhotoPicker (1.1.1)
-  - TuSDK (2.8.0):
-    - TuSDK/Core (= 2.8.0)
-    - TuSDK/GPUImage (= 2.8.0)
-    - TuSDK/ImageGeeV1 (= 2.8.0)
-    - TuSDK/ImageGeeV2 (= 2.8.0)
-  - TuSDK/Core (2.8.0)
-  - TuSDK/GPUImage (2.8.0):
-    - GPUImage (~> 0.1.6)
-  - TuSDK/ImageGeeV1 (2.8.0)
-  - TuSDK/ImageGeeV2 (2.8.0)
 
 DEPENDENCIES:
+  - Sharaku
   - SnapKit (~> 3.2.0)
   - TLPhotoPicker
-  - TuSDK (~> 2.8.0)
 
 SPEC CHECKSUMS:
-  GPUImage: 733a5f0fab92df9de1c37ba9df520a833ccb406d
+  Sharaku: c18de569fc99f6e936f46ca812b571826cc658a7
   SnapKit: 1ca44df72cfa543218d177cb8aab029d10d86ea7
   TLPhotoPicker: cbbc56721b76b1f60c325fb3bdef3100b99412b7
-  TuSDK: 0ee6705d4943e124a9b5bfea94f7bf5d100fcdfd
 
-PODFILE CHECKSUM: 486b8f046054866cded6af72ecfb53909d1782ca
+PODFILE CHECKSUM: 7235f2a23770a0458fab489f69779443e0d2342b
 
 COCOAPODS: 1.1.1
